@@ -1,0 +1,22 @@
+{
+  "name": "littleloft",
+  "version": "1.0.0",
+  "description": "John Heritage LL code test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jherit/LittleLoft.git"
+  },
+  "author": "John Heritage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jherit/LittleLoft/issues"
+  },
+  "homepage": "https://github.com/Jherit/LittleLoft#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
