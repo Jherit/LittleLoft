@@ -5,23 +5,8 @@ var cssvars = require('postcss-simple-vars');
 var nested = require('postcss-nested');
 var cssImport = require('postcss-import');
 
-gulp.task('styles', function(){
+gulp.task('styles', () => {
  return gulp.src('app/src/styles/styles.css')
   .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
   .pipe(gulp.dest('app/dist/styles'))
 });
-
-
-
-// function defaultTask(cb) {
-//     console.log("Hooray, gulp task is success!");
-//     cb();
-//   }
-  
-//   exports.default = defaultTask
-
-// var gulp = require('gulp');
-
-// gulp.task('default', function(){
-//   console.log("Hooray, gulp task is success!");
-// });

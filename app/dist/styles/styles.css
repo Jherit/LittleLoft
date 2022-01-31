@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 /* Colors 
 ****************************/
 * {
@@ -10,174 +10,218 @@ body{
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;    
 	margin: 0;
 }
-h1, h2, h4, p {
-    color: #1F1F1F;
+h1,
+h2,
+h4,
+p {
+  color: #1f1f1f;
 }
-h1, h2 {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin:10px 0px 30px;
+h1,
+h2 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 10px 0px 30px;
 }
 h4 {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin:10px 0px 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 10px 0px 30px;
 }
 p {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    margin:0px 0px 30px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0px 0px 30px;
 }
 /** portrait ipad **/
 @media (max-width: 768px) {
-    h1, h2 {
-        font-size: 30px;
-        line-height: 33px;
-    }
+  h1,
+  h2 {
+    font-size: 30px;
+    line-height: 33px;
+    margin: 10px 0px 20px;
+  }
 
-    p {
-        font-size: 12px;
-        line-height: 16.4px;
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16.4px;
+    margin: 10px 0px;
+  }
+}
+.header {
+  background-color: #fbf8e9;
+  padding: 2.6rem 1rem 0.6rem;
+  text-align: center;
+}
+/** portrait ipad **/
+@media (max-width: 768px) {
+  .header {
+    background-color: #fbf8e9;
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+  }
+
+    .header__logo {
+      width: 100px;
+      height: auto;
     }
 }
-.header{
-	background-color: #FBF8E9;
-	padding: 0.6rem;
-	text-align: center;
-
-}
-.header__title{
-		text-align: center;
-	}
-.header__button{
-		list-style: none;
-		float: left;
-		margin-right: 1rem;
-		padding: 0.6rem;
-
-	}
-.header__button a{
-			text-decoration: none;
-			color: white;
-		}
-.header__button:hover{
-			background-color: #F7EFB4;
-		}
-.header:after{
-		display: block;
-		content: "";
-		clear: both;
-	}
 .hero {
-    background: linear-gradient(0deg, #FFF 25%, #FBF8E9 25%);
-    height: 100%;
+  background: linear-gradient(0deg, #fff 25%, #fbf8e9 25%);
+  height: 100%;
 }
 .hero__contentframe {
-        display:flex;
-        justify-content: space-between;
-        max-width:1100px;
-        margin:0px auto;
-    }
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0px auto;
+  }
 .hero__leftcontent {
-        display: flex;
-        flex-direction: column;
-        margin:140px 0px 20px;
-        width:42%;
-    }
+    display: flex;
+    flex-direction: column;
+    margin: 140px 0px 20px;
+    width: 42%;
+  }
 .hero__appbuttons {
-        display: flex;
-        flex-direction: row;
-        margin:10px 0px 0px;
-    }
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px;
+  }
 .hero__appbuttons a {
-            margin:0px 20px 0px 0px;
-        }
+      margin: 0px 20px 0px 0px;
+    }
 .hero__heroimage {
-        width:50%;
-        height:auto;
-    }
+    width: 50%;
+    height: auto;
+  }
 .appscreen li {
-        max-width:900px;
-        display: flex;
-        margin:10px auto;
-        align-items: center;
-        justify-content: space-between;
-    }
+    max-width: 900px;
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+  }
 .appscreen li:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
+      flex-direction: row-reverse;
+    }
 .appscreen__textframe {
-        max-width: 50%;
-    }
+    max-width: 50%;
+  }
 .appscreen__phonefront {
-        max-width: 50%;
-        position:relative;
-        content-visibility: auto;
-    }
-.ourstory{
-    background-color: #F7EFB4;
-    min-height:400px;
+    max-width: 50%;
+    position: relative;
+    content-visibility: auto;
+  }
+.ourstory {
+  background-color: #f7efb4;
+  min-height: 400px;
 }
-.footer{
-    background-color: #1F1F1F;
-    min-height:400px;
+.footer {
+  background-color: #1f1f1f;
+  min-height: 400px;
 }
 /** landscape ipad or small laptop **/
 @media (max-width: 1024px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 12%, #FBF8E9 12%);
+  .hero {
+    background: linear-gradient(0deg, #fff 12%, #fbf8e9 12%);
+  }
+
+    .hero__contentframe {
+      max-width: 900px;
     }
-    
-        .hero__contentframe {
-            max-width:900px;
-        }
 }
 /** portrait ipad **/
 @media (max-width: 768px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 20%, #FBF8E9 20%);
+  .hero {
+    background: linear-gradient(0deg, #fff 20%, #fbf8e9 20%);
+  }
+
+    .hero__contentframe {
+      max-width: 700px;
     }
-    
-        .hero__contentframe {
-            max-width:700px;
-        }
 
-        .hero__leftcontent {
-            margin:100px 0px 20px;
-            width:50%;
-        }
+    .hero__leftcontent {
+      margin: 100px 0px 20px;
+      width: 50%;
+    }
 
-        .hero__heroimage {
-            width:50%;
-            height:auto;
-        }
+    .hero__heroimage {
+      width: 50%;
+      height: auto;
+    }
 }
 /** potrait mobile **/
 @media (max-width: 420px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 0%, #FBF8E9 0%);
+  .hero {
+    background: linear-gradient(0deg, #fff 14%, #fbf8e9 14%);
+  }
+
+    .hero__contentframe {
+      max-width: unset;
+      flex-direction: column;
+      padding: 0px 20px;
+      align-items: center;
     }
-    
-        .hero__contentframe {
-            max-width:unset;
-            flex-direction: column;
-            padding:0px 20px;
 
+    .hero__leftcontent {
+      margin: 10px 0px 20px;
+      width: 100%;
+      text-align: center;
+      padding: 0px 20px;
+    }
+
+    .hero__appbuttons {
+      display: flex;
+      flex-direction: row;
+      margin: 14px 0px 0px;
+      justify-content: space-between;
+    }
+
+      .hero__appbuttons a {
+        margin: 0px;
+      }
+
+        .hero__appbuttons a img {
+          width: 84%;
+          height: auto;
         }
 
-        .hero__leftcontent {
-            margin:10px 0px 20px;
-            width:100%;
-            text-align: center;
-        }
+    .hero__heroimage {
+      width: 80%;
+      height: auto;
+    }
+    .appscreen li {
+      max-width: 100%;
+      display: flex;
+      margin: 10px auto;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 20px 26px 0px;
+    }
 
-        .hero__heroimage {
-            width:100%;
-            height:auto;
-        }
+      .appscreen li:nth-child(odd) {
+        flex-direction: unset;
+      }
+
+    .appscreen__textframe {
+      max-width: 100%;
+    }
+
+    .appscreen__phonefront {
+      max-width: 75%;
+      position: relative;
+      content-visibility: auto;
+    }
 }

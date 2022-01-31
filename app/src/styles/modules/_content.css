@@ -1,125 +1,168 @@
 .hero {
-    background: linear-gradient(0deg, #FFF 25%, $lightYellow 25%);
-    height: 100%;
+  background: linear-gradient(0deg, #fff 25%, $lightYellow 25%);
+  height: 100%;
 
-    &__contentframe {
-        display:flex;
-        justify-content: space-between;
-        max-width:1100px;
-        margin:0px auto;
+  &__contentframe {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0px auto;
+  }
+
+  &__leftcontent {
+    display: flex;
+    flex-direction: column;
+    margin: 140px 0px 20px;
+    width: 42%;
+  }
+
+  &__appbuttons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px;
+
+    a {
+      margin: 0px 20px 0px 0px;
     }
+  }
 
-    &__leftcontent {
-        display: flex;
-        flex-direction: column;
-        margin:140px 0px 20px;
-        width:42%;
-    }
-
-    &__appbuttons {
-        display: flex;
-        flex-direction: row;
-        margin:10px 0px 0px;
-
-        a {
-            margin:0px 20px 0px 0px;
-        }
-    }
-
-    &__heroimage {
-        width:50%;
-        height:auto;
-    }
+  &__heroimage {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .appscreen {
-    li {
-        max-width:900px;
-        display: flex;
-        margin:10px auto;
-        align-items: center;
-        justify-content: space-between;
-  
-        &:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-    }
+  li {
+    max-width: 900px;
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
 
-    &__textframe {
-        max-width: 50%;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
     }
+  }
 
-    &__phonefront {
-        max-width: 50%;
-        position:relative;
-        content-visibility: auto;
-    }
+  &__textframe {
+    max-width: 50%;
+  }
+
+  &__phonefront {
+    max-width: 50%;
+    position: relative;
+    content-visibility: auto;
+  }
 }
 
-
-.ourstory{
-    background-color: $brightYellow;
-    min-height:400px;
+.ourstory {
+  background-color: $brightYellow;
+  min-height: 400px;
 }
 
-.footer{
-    background-color: $darkGrey;
-    min-height:400px;
+.footer {
+  background-color: $darkGrey;
+  min-height: 400px;
 }
 
 /** landscape ipad or small laptop **/
 @media (max-width: 1024px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 12%, $lightYellow 12%);
-    
-        &__contentframe {
-            max-width:900px;
-        }
+  .hero {
+    background: linear-gradient(0deg, #fff 12%, $lightYellow 12%);
+
+    &__contentframe {
+      max-width: 900px;
     }
+  }
 }
 
 /** portrait ipad **/
 @media (max-width: 768px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 20%, $lightYellow 20%);
-    
-        &__contentframe {
-            max-width:700px;
-        }
+  .hero {
+    background: linear-gradient(0deg, #fff 20%, $lightYellow 20%);
 
-        &__leftcontent {
-            margin:100px 0px 20px;
-            width:50%;
-        }
-
-        &__heroimage {
-            width:50%;
-            height:auto;
-        }
+    &__contentframe {
+      max-width: 700px;
     }
+
+    &__leftcontent {
+      margin: 100px 0px 20px;
+      width: 50%;
+    }
+
+    &__heroimage {
+      width: 50%;
+      height: auto;
+    }
+  }
 }
 
 /** potrait mobile **/
 @media (max-width: 420px) {
-    .hero {
-        background: linear-gradient(0deg, #FFF 0%, $lightYellow 0%);
-    
-        &__contentframe {
-            max-width:unset;
-            flex-direction: column;
-            padding:0px 20px;
+  .hero {
+    background: linear-gradient(0deg, #fff 14%, $lightYellow 14%);
 
-        }
-
-        &__leftcontent {
-            margin:10px 0px 20px;
-            width:100%;
-            text-align: center;
-        }
-
-        &__heroimage {
-            width:100%;
-            height:auto;
-        }
+    &__contentframe {
+      max-width: unset;
+      flex-direction: column;
+      padding: 0px 20px;
+      align-items: center;
     }
+
+    &__leftcontent {
+      margin: 10px 0px 20px;
+      width: 100%;
+      text-align: center;
+      padding: 0px 20px;
+    }
+
+    &__appbuttons {
+      display: flex;
+      flex-direction: row;
+      margin: 14px 0px 0px;
+      justify-content: space-between;
+
+      a {
+        margin: 0px;
+
+        img {
+          width: 84%;
+          height: auto;
+        }
+      }
+    }
+
+    &__heroimage {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .appscreen {
+    li {
+      max-width: 100%;
+      display: flex;
+      margin: 10px auto;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 20px 26px 0px;
+
+      &:nth-child(odd) {
+        flex-direction: unset;
+      }
+    }
+
+    &__textframe {
+      max-width: 100%;
+    }
+
+    &__phonefront {
+      max-width: 75%;
+      position: relative;
+      content-visibility: auto;
+    }
+  }
 }

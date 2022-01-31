@@ -1,33 +1,19 @@
-.header{
-	background-color: $lightYellow;
-	padding: 0.6rem;
-	text-align: center;
-	
-	&__title{
-		text-align: center;
-	}
+.header {
+  background-color: $lightYellow;
+  padding: 2.6rem 1rem 0.6rem;
+  text-align: center;
+}
 
-	&__button{
-		list-style: none;
-		float: left;
-		margin-right: 1rem;
-		padding: 0.6rem;
+/** portrait ipad **/
+@media (max-width: 768px) {
+  .header {
+    background-color: $lightYellow;
+    padding: 3rem 1rem 1rem;
+    text-align: center;
 
-		a{
-			text-decoration: none;
-			color: white;
-		}
-
-		&:hover{
-			background-color: $brightYellow;
-		}
-
-	}
-	
-	&:after{
-		display: block;
-		content: "";
-		clear: both;
-	}
-
+    &__logo {
+      width: 100px;
+      height: auto;
+    }
+  }
 }
