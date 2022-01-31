@@ -1,12 +1,49 @@
 .hero {
-    background-color: $lightYellow;
-    /* max-width:500px;
-    margin:0px auto; */
-    display:flex;
+    /* background-color: $lightYellow; */
+    background: linear-gradient(0deg, #FFF 25%, $lightYellow 25%);
+    height: 100%;
 
     &__contentframe {
         display:flex;
+        justify-content: space-between;
+        max-width:1100px;
+        margin:0px auto;
+    }
+
+    &__leftcontent {
+        display: flex;
         flex-direction: column;
+        margin:140px 0px 20px;
+        width:42%;
+    }
+
+    &__appbuttons {
+        display: flex;
+        flex-direction: row;
+        margin:10px 0px 0px;
+
+        a {
+            margin:0px 20px 0px 0px;
+        }
+    }
+
+    &__heroimage {
         width:50%;
+        height:auto;
     }
 }
+
+ul.appscreen {
+
+    li {
+        max-width:1100px;
+        display: flex;
+        margin:10px auto;
+        align-items: center;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    } 
+}
+
