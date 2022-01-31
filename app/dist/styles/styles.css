@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 /* Colors 
 ****************************/
 * {
@@ -10,7 +11,7 @@ body{
 	margin: 0;
 }
 h1, h2, h4, p {
-    font-color: #1F1F1F;
+    color: #1F1F1F;
 }
 h1, h2 {
     font-size: 50px;
@@ -31,6 +32,18 @@ p {
     line-height: 22px;
     font-weight: 400;
     margin:0px 0px 30px;
+}
+/** portrait ipad **/
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 16.4px;
+    }
 }
 .header{
 	background-color: #FBF8E9;
@@ -61,7 +74,6 @@ p {
 		clear: both;
 	}
 .hero {
-    /* background-color: $lightYellow; */
     background: linear-gradient(0deg, #FFF 25%, #FBF8E9 25%);
     height: 100%;
 }
@@ -89,12 +101,83 @@ p {
         width:50%;
         height:auto;
     }
-ul.appscreen li {
-        max-width:1100px;
+.appscreen li {
+        max-width:900px;
         display: flex;
         margin:10px auto;
         align-items: center;
+        justify-content: space-between;
     }
-ul.appscreen li:nth-child(odd) {
+.appscreen li:nth-child(odd) {
             flex-direction: row-reverse;
         }
+.appscreen__textframe {
+        max-width: 50%;
+    }
+.appscreen__phonefront {
+        max-width: 50%;
+        position:relative;
+        content-visibility: auto;
+    }
+.ourstory{
+    background-color: #F7EFB4;
+    min-height:400px;
+}
+.footer{
+    background-color: #1F1F1F;
+    min-height:400px;
+}
+/** landscape ipad or small laptop **/
+@media (max-width: 1024px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 12%, #FBF8E9 12%);
+    }
+    
+        .hero__contentframe {
+            max-width:900px;
+        }
+}
+/** portrait ipad **/
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 20%, #FBF8E9 20%);
+    }
+    
+        .hero__contentframe {
+            max-width:700px;
+        }
+
+        .hero__leftcontent {
+            margin:100px 0px 20px;
+            width:50%;
+        }
+
+        .hero__heroimage {
+            width:50%;
+            height:auto;
+        }
+}
+/** potrait mobile **/
+@media (max-width: 420px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 0%, #FBF8E9 0%);
+    }
+    
+        .hero__contentframe {
+            max-width:unset;
+            flex-direction: column;
+            padding:0px 20px;
+
+        }
+
+        .hero__leftcontent {
+            margin:10px 0px 20px;
+            width:100%;
+            text-align: center;
+        }
+
+        .hero__heroimage {
+            width:100%;
+            height:auto;
+        }
+}

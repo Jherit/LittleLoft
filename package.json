@@ -20,6 +20,7 @@
     "autoprefixer": "^10.4.2",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
+    "postcss-combine-media-query": "^1.0.1",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-simple-vars": "^6.0.3"

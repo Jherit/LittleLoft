@@ -1,5 +1,5 @@
 h1, h2, h4, p {
-    font-color: $darkGrey;
+    color: $darkGrey;
 }
 
 h1, h2 {
@@ -23,4 +23,17 @@ p {
     line-height: 22px;
     font-weight: 400;
     margin:0px 0px 30px;
+}
+
+/** portrait ipad **/
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 16.4px;
+    }
 }

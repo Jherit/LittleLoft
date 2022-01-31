@@ -1,5 +1,4 @@
 .hero {
-    /* background-color: $lightYellow; */
     background: linear-gradient(0deg, #FFF 25%, $lightYellow 25%);
     height: 100%;
 
@@ -33,17 +32,94 @@
     }
 }
 
-ul.appscreen {
-
+.appscreen {
     li {
-        max-width:1100px;
+        max-width:900px;
         display: flex;
         margin:10px auto;
         align-items: center;
-
+        justify-content: space-between;
+  
         &:nth-child(odd) {
             flex-direction: row-reverse;
         }
-    } 
+    }
+
+    &__textframe {
+        max-width: 50%;
+    }
+
+    &__phonefront {
+        max-width: 50%;
+        position:relative;
+        content-visibility: auto;
+    }
 }
 
+
+.ourstory{
+    background-color: $brightYellow;
+    min-height:400px;
+}
+
+.footer{
+    background-color: $darkGrey;
+    min-height:400px;
+}
+
+/** landscape ipad or small laptop **/
+@media (max-width: 1024px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 12%, $lightYellow 12%);
+    
+        &__contentframe {
+            max-width:900px;
+        }
+    }
+}
+
+/** portrait ipad **/
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 20%, $lightYellow 20%);
+    
+        &__contentframe {
+            max-width:700px;
+        }
+
+        &__leftcontent {
+            margin:100px 0px 20px;
+            width:50%;
+        }
+
+        &__heroimage {
+            width:50%;
+            height:auto;
+        }
+    }
+}
+
+/** potrait mobile **/
+@media (max-width: 420px) {
+    .hero {
+        background: linear-gradient(0deg, #FFF 0%, $lightYellow 0%);
+    
+        &__contentframe {
+            max-width:unset;
+            flex-direction: column;
+            padding:0px 20px;
+
+        }
+
+        &__leftcontent {
+            margin:10px 0px 20px;
+            width:100%;
+            text-align: center;
+        }
+
+        &__heroimage {
+            width:100%;
+            height:auto;
+        }
+    }
+}
