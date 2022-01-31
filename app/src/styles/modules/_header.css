@@ -1,7 +1,7 @@
-.navbar{
+.header{
 	background-color: $lightYellow;
-	color: white;
 	padding: 0.6rem;
+	text-align: center;
 	
 	&__title{
 		text-align: center;

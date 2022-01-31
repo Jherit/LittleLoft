@@ -1,0 +1,12 @@
+.hero {
+    background-color: $lightYellow;
+    /* max-width:500px;
+    margin:0px auto; */
+    display:flex;
+
+    &__contentframe {
+        display:flex;
+        flex-direction: column;
+        width:50%;
+    }
+}

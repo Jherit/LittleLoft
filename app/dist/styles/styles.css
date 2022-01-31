@@ -7,31 +7,42 @@ body{
 	font-family: "Arial";
 	margin: 0;
 }
-.navbar{
-	background-color: #34aad9;
-	color: white;
+.header{
+	background-color: #FBF8E9;
 	padding: 0.6rem;
+	text-align: center;
 
 }
-.navbar__title{
+.header__title{
 		text-align: center;
 	}
-.navbar__button{
+.header__button{
 		list-style: none;
 		float: left;
 		margin-right: 1rem;
 		padding: 0.6rem;
 
 	}
-.navbar__button a{
+.header__button a{
 			text-decoration: none;
 			color: white;
 		}
-.navbar__button:hover{
-			background-color: #5bbbe0;
+.header__button:hover{
+			background-color: #F7EFB4;
 		}
-.navbar:after{
+.header:after{
 		display: block;
 		content: "";
 		clear: both;
 	}
+.hero {
+    background-color: #FBF8E9;
+    /* max-width:500px;
+    margin:0px auto; */
+    display:flex;
+}
+.hero__contentframe {
+        display:flex;
+        flex-direction: column;
+        width:50%;
+    }
