@@ -67,6 +67,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  
 
   &__textframe {
     max-width:470px;
