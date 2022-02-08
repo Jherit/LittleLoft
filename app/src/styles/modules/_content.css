@@ -56,7 +56,30 @@
   }
 }
 
-.ourstory {
+.secondary {
+  background-color: $lightYellow;
+  padding:90px 20px;
+
+  &__frame {
+    max-width:1200px;
+    margin:0px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__textframe {
+    max-width:470px;
+  }
+
+  &__image {
+    width: 40%;
+    height: auto;
+    margin:0px auto;
+  }
+}
+
+.contact {
   background-color: $brightYellow;
   min-height: 400px;
 }
