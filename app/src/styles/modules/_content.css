@@ -56,7 +56,7 @@
   }
 }
 
-.secondary {
+.secondary, .contact {
   background-color: $lightYellow;
   padding:90px 20px;
 
@@ -67,7 +67,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
 
   &__textframe {
     max-width:470px;
@@ -82,7 +82,54 @@
 
 .contact {
   background-color: $brightYellow;
-  min-height: 400px;
+
+  &__frame {
+    max-width: 900px;
+    justify-content: space-around;
+  }
+
+  &__textframe {
+    form {
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      input{ 
+        border-radius: 24px;
+        padding:14px 20px 15px;
+        border:1px solid #dadada;
+        background-color: #fff;
+
+        &[type=email] {
+          width:70%;
+          color:#333;
+        }
+
+        &[type=submit] {
+          background-color: #1f1f1f;
+          color:#fff;
+          text-align: center;
+          cursor:pointer;
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 36%;
+    margin:0px 0px;
+  }
+
 }
 
 .footer {
