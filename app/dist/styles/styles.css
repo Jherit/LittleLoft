@@ -108,46 +108,46 @@ input {
     width: 50%;
     height: auto;
   }
-.appscreen li {
+.contentlist li {
     max-width: 900px;
     display: flex;
     margin: 10px auto;
     align-items: center;
     justify-content: space-between;
   }
-.appscreen li:nth-child(odd) {
+.contentlist li:nth-child(odd) {
       flex-direction: row-reverse;
     }
-.appscreen__textframe {
+.contentlist__textframe {
     max-width: 50%;
   }
-.appscreen__phonefront {
+.contentlist__phonefront {
     max-width: 50%;
     position: relative;
     content-visibility: auto;
   }
-.secondary, .contact {
+.secondary,
+.contact {
   background-color: #fbf8e9;
-  padding:90px 20px;
+  padding: 90px 20px;
 }
 .secondary__frame, .contact__frame {
-    max-width:1200px;
-    margin:0px auto;
-    display:flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 .secondary__textframe, .contact__textframe {
-    max-width:470px;
+    max-width: 470px;
   }
 .secondary__image, .contact__image {
     width: 40%;
     height: auto;
-    margin:0px auto;
+    margin: 0px auto;
   }
 .contact {
   background-color: #f7efb4;
-
 }
 .contact__frame {
     max-width: 900px;
@@ -167,36 +167,34 @@ input {
         position: absolute;
         width: 1px;
       }
-.contact__textframe form input{ 
+.contact__textframe form input {
         border-radius: 24px;
-        padding:14px 20px 15px;
-        border:1px solid #dadada;
+        padding: 14px 20px 15px;
+        border: 1px solid #dadada;
         background-color: #fff;
       }
-.contact__textframe form input[type=email] {
-          width:70%;
-          color:#333;
+.contact__textframe form input[type="email"] {
+          width: 70%;
+          color: #333;
         }
-.contact__textframe form input[type=submit] {
+.contact__textframe form input[type="submit"] {
           background-color: #1f1f1f;
-          color:#fff;
+          color: #fff;
           text-align: center;
-          cursor:pointer;
+          cursor: pointer;
         }
 .contact__image {
     width: 36%;
-    margin:0px 0px;
+    margin: 0px 0px;
   }
 .footer {
   background-color: #1f1f1f;
-  padding:90px 20px;
-  text-align:center;
-
-
+  padding: 90px 20px;
+  text-align: center;
 }
 .footer__frame {
-    max-width:500px;
-    margin:0px auto;
+    max-width: 500px;
+    margin: 0px auto;
   }
 .footer__appbuttons {
     display: flex;
@@ -206,15 +204,26 @@ input {
     margin: 0px auto;
   }
 .footer__appbuttons a img {
-      margin:0px 16px;
+      margin: 0px 16px;
     }
-.footer h2, .footer p {
+.footer__copyline {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0px auto;
+    align-items: center;
+  }
+.footer__copyline p {
+      margin: 0px;
+    }
+.footer h2,
+  .footer p {
     color: #fff;
   }
 .footer hr {
-    width:100%;
-    margin:70px auto;
-    opacity: .4;
+    width: 100%;
+    margin: 66px auto;
+    opacity: 0.4;
   }
 /** landscape ipad or small laptop **/
 @media (max-width: 1024px) {
@@ -225,6 +234,11 @@ input {
     .hero__contentframe {
       max-width: 900px;
     }
+        .hero__appbuttons a img {
+          width: 100%;
+          height: auto;
+          max-width: 250px;
+        }
 }
 /** portrait ipad **/
 @media (max-width: 768px) {
@@ -245,6 +259,53 @@ input {
       width: 50%;
       height: auto;
     }
+
+  .contentlist {
+    padding: 0px 40px;
+  }
+
+  .secondary,
+  .contact {
+    padding: 70px 40px;
+  }
+    .secondary__textframe {
+      max-width: 55%;
+    }
+    .contact__image {
+      width: 25%;
+    }
+
+  .footer {
+    padding: 60px 40px;
+  }
+      .footer__appbuttons a img {
+        max-width: 140px;
+        width: 100%;
+        height: auto;
+      }
+
+    .footer__copyline {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+      .footer__copyline p {
+        margin: 0px 0px 20px;
+        width: 100%;
+      }
+
+      .footer__copyline a {
+        margin: 0px 10px;
+      }
+
+        .footer__copyline a img {
+          width: 36px;
+          height: 36px;
+        }
+
+    .footer hr {
+      margin: 40px auto;
+    }
 }
 /** potrait mobile **/
 @media (max-width: 420px) {
@@ -253,7 +314,7 @@ input {
   }
 
     .hero__contentframe {
-      max-width: unset;
+      /* max-width: unset; */
       flex-direction: column;
       padding: 0px 20px;
       align-items: center;
@@ -286,7 +347,11 @@ input {
       width: 80%;
       height: auto;
     }
-    .appscreen li {
+
+  .contentlist {
+    padding: 0px 30px;
+  }
+    .contentlist li {
       max-width: 100%;
       display: flex;
       margin: 10px auto;
@@ -294,20 +359,66 @@ input {
       justify-content: center;
       flex-wrap: wrap;
       text-align: center;
-      padding: 20px 26px 0px;
+      padding: 20px 0px 0px;
     }
 
-      .appscreen li:nth-child(odd) {
+      .contentlist li:nth-child(odd) {
         flex-direction: unset;
       }
 
-    .appscreen__textframe {
+    .contentlist__textframe {
       max-width: 100%;
     }
 
-    .appscreen__phonefront {
+    .contentlist__phonefront {
       max-width: 75%;
       position: relative;
       content-visibility: auto;
     }
+
+  .secondary,
+  .contact {
+    padding: 50px 30px;
+  }
+    .secondary__textframe {
+      max-width: 100%;
+    }
+
+    .secondary__frame {
+      flex-direction: column;
+    }
+
+    .secondary__image {
+      width: 100%;
+      margin: 20px auto;
+    }
+    .contact__image {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+      .contact__textframe form {
+        flex-wrap: wrap;
+      }
+          .contact__textframe form input[type="email"] {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+
+          .contact__textframe form input[type="submit"] {
+            width: 100%;
+          }
+    .footer__appbuttons {
+      width: unset;
+    }
+
+      .footer__appbuttons a img {
+        margin: 0px 4px;
+        max-width: 130px;
+      }
 }
