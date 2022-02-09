@@ -134,7 +134,37 @@
 
 .footer {
   background-color: $darkGrey;
-  min-height: 400px;
+  padding:90px 20px;
+  text-align:center;
+
+  &__frame {
+    max-width:500px;
+    margin:0px auto;
+  }
+
+  &__appbuttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0px auto;
+
+    a img {
+      margin:0px 16px;
+    }
+  }
+
+  h2, p {
+    color: #fff;
+  }
+
+  hr {
+    width:100%;
+    margin:70px auto;
+    opacity: .4;
+  }
+
+
 }
 
 /** landscape ipad or small laptop **/

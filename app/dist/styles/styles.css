@@ -189,8 +189,33 @@ input {
   }
 .footer {
   background-color: #1f1f1f;
-  min-height: 400px;
+  padding:90px 20px;
+  text-align:center;
+
+
 }
+.footer__frame {
+    max-width:500px;
+    margin:0px auto;
+  }
+.footer__appbuttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0px auto;
+  }
+.footer__appbuttons a img {
+      margin:0px 16px;
+    }
+.footer h2, .footer p {
+    color: #fff;
+  }
+.footer hr {
+    width:100%;
+    margin:70px auto;
+    opacity: .4;
+  }
 /** landscape ipad or small laptop **/
 @media (max-width: 1024px) {
   .hero {
