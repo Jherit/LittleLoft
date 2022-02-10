@@ -27,7 +27,7 @@
   }
 
   &__heroimage {
-    width: 50%;
+    /* width: 50%; */
     height: auto;
   }
 }
@@ -53,6 +53,7 @@
     max-width: 50%;
     position: relative;
     content-visibility: auto;
+    height:auto !important;
   }
 }
 
@@ -226,7 +227,7 @@
     }
 
     &__heroimage {
-      width: 50%;
+      /* width: 50%; */
       height: auto;
     }
   }
@@ -324,7 +325,7 @@
     }
 
     &__heroimage {
-      width: 80%;
+      /* width: 80%; */
       height: auto;
     }
   }

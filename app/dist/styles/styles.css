@@ -105,7 +105,7 @@ input {
       margin: 0px 20px 0px 0px;
     }
 .hero__heroimage {
-    width: 50%;
+    /* width: 50%; */
     height: auto;
   }
 .contentlist li {
@@ -125,6 +125,7 @@ input {
     max-width: 50%;
     position: relative;
     content-visibility: auto;
+    height:auto !important;
   }
 .secondary,
 .contact {
@@ -267,7 +268,7 @@ input {
     }
 
     .hero__heroimage {
-      width: 50%;
+      /* width: 50%; */
       height: auto;
     }
 
@@ -355,7 +356,7 @@ input {
         }
 
     .hero__heroimage {
-      width: 80%;
+      /* width: 80%; */
       height: auto;
     }
 
