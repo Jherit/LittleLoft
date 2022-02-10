@@ -27,8 +27,8 @@
   }
 
   &__heroimage {
-    /* width: 50%; */
-    height: auto;
+    width: 100%;
+    height: auto !important;
   }
 }
 
@@ -227,8 +227,8 @@
     }
 
     &__heroimage {
-      /* width: 50%; */
-      height: auto;
+      width: 100%;
+      height: auto !important;
     }
   }
 
@@ -325,8 +325,8 @@
     }
 
     &__heroimage {
-      /* width: 80%; */
-      height: auto;
+      width: 100%;
+      height: auto !important;
     }
   }
 

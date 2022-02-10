@@ -105,8 +105,8 @@ input {
       margin: 0px 20px 0px 0px;
     }
 .hero__heroimage {
-    /* width: 50%; */
-    height: auto;
+    width: 100%;
+    height: auto !important;
   }
 .contentlist li {
     max-width: 900px;
@@ -268,8 +268,8 @@ input {
     }
 
     .hero__heroimage {
-      /* width: 50%; */
-      height: auto;
+      width: 100%;
+      height: auto !important;
     }
 
   .contentlist {
@@ -356,8 +356,8 @@ input {
         }
 
     .hero__heroimage {
-      /* width: 80%; */
-      height: auto;
+      width: 100%;
+      height: auto !important;
     }
 
   .contentlist {
