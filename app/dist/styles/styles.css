@@ -176,13 +176,24 @@ input {
 .contact__textframe form input[type="email"] {
           width: 70%;
           color: #333;
+          transition: 0.4s;
         }
+.contact__textframe form input[type="email"]:hover, .contact__textframe form input[type="email"]:focus, .contact__textframe form input[type="email"]:active{
+            background-color: rgba(229, 239, 252, 0.9);
+            border: 1px solid #4a6789;
+          }
 .contact__textframe form input[type="submit"] {
           background-color: #1f1f1f;
           color: #fff;
           text-align: center;
           cursor: pointer;
+          transition: 0.4s;
+          border: 1px solid #1f1f1f;
         }
+.contact__textframe form input[type="submit"]:hover, .contact__textframe form input[type="submit"]:focus, .contact__textframe form input[type="submit"]:active{
+            background-color: #4a6789;
+            border: 1px solid #1f1f1f;
+          }
 .contact__image {
     width: 36%;
     margin: 0px 0px;
@@ -421,4 +432,24 @@ input {
         margin: 0px 4px;
         max-width: 130px;
       }
+}
+.jumpup {
+-webkit-animation: bounce 1s 2 alternate;
+        animation: bounce 1s 2 alternate;
+}
+@-webkit-keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
 }

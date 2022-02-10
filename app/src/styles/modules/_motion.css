@@ -1,0 +1,15 @@
+
+.jumpup {
+animation: bounce 1s 2 alternate;
+}
+
+@keyframes bounce {
+	from {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	to {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
